@@ -1,19 +1,3 @@
-"""
-item_dict={}
-f=open("D:/Python_project/Python_project/Tissue_paper_management.txt","r")
-while True:
-    item=f.readline()
-    if item=='':
-        break
-    quant=f.readline()
-    uprice=f.readline()
-    item=item[:len(item)-1]
-    quant=int(quant[:len(quant)-1])
-    uprice=float(uprice[:len(uprice)-1])
-    item_dict[item]=[quant,uprice]
-f.close()
-"""
-
 item_dict={
     "Pocket wallet tissue":[2500,10],
     "Gold toilet tissue":[3000,30],
@@ -44,8 +28,8 @@ def dec_quant(key,val):
 def inc_quant(key,val):
     item_dict[key][0]+=val
     
-def receive_order():
-    print("Order Received")
+def orders_received():
+    print("Orders Received")
     while True:
         item=input("Item(type 'x' to stop):")
         if item=="x":
@@ -59,7 +43,7 @@ def receive_order():
         inc_quant(item,value)
     #show_dict()
 
-def process_demand():
+def demand_items():
     print("Input Demand")
     # demand_list =
     demand_list = []
@@ -98,23 +82,15 @@ def process_demand():
 while True:
     show_dict()
     print("Choose an option:")
-    print("Type '1': To process demand")
-    print("Type '2': To process order")
+    print("Type '1': To Demand items")
+    print("Type '2': To Orders received")
     print("Type '3': To exit the program")
     choice = input("choice: ")
     if choice=='1':
-        process_demand()
+        demand_items()
     elif choice=='2':
-        receive_order()
+        orders_received()
     elif choice=='3':
         break
     else:
         continue
-"""
-f=open("D:/Python_project/Python_project/Tissue_paper_management.txt","r")
-for x in item_dict:
-    f.write(x+"\n")
-    f.write(str(item_dict[x][0])+"\n")
-    f.write(str(item_dict[x][1])+"\n")
-f.close() 
-"""
