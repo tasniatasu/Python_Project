@@ -1,0 +1,39 @@
+Pocket wallet tissue
+2500
+10
+Gold toilet tissue
+3000
+30
+White toilet tissue
+3500
+25
+Facial tissue
+2050
+70
+Paper napkin
+4000
+60
+Kitchen towel
+4500
+75
+Restaurant nepkin
+200
+55
+Pink toilet tissue
+2050
+20
+Hand Towel
+1500
+68
+Soft toilet tissue
+2300
+46
+Lemon ferfumed tissue
+800
+25
+Rose ferfumed tissue
+1700
+30
+Jasmin toilet tissue
+2100
+30
